@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Lisa - Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="gallery.html">Gallery</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="gallery.html">Home</a>
+                <a class="nav-link" href="art-display.html">Collections</a>
+                <a class="nav-link" href="index.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="art-detail-image mona-lisa-large"></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="art-details">
+                    <h2>Mona Lisa</h2>
+                    <p class="artist-name">Leonardo da Vinci</p>
+                    <p class="year">1503-1519</p>
+                    <div class="description">
+                        <p>The most famous portrait in the world, known for the subject's enigmatic smile and da Vinci's innovative sfumato technique. This Renaissance masterpiece showcases the artist's mastery of atmospheric perspective and psychological depth, making it one of the most studied and celebrated paintings in art history.</p>
+                    </div>
+                    <a href="art-display.html" class="btn btn-outline-primary">Back to Collection</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-art mt-5">
+            <h4>Similar Artworks</h4>
+            <div class="row g-3 mt-3">
+                <div class="col-md-4">
+                    <div class="similar-card">
+                        <div class="similar-image last-supper"></div>
+                        <h6>The Last Supper</h6>
+                        <p class="text-muted">Leonardo da Vinci</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="similar-card">
+                        <div class="similar-image vitruvian"></div>
+                        <h6>Vitruvian Man</h6>
+                        <p class="text-muted">Leonardo da Vinci</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="similar-card">
+                        <div class="similar-image lady-ermine"></div>
+                        <h6>Lady with an Ermine</h6>
+                        <p class="text-muted">Leonardo da Vinci</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
