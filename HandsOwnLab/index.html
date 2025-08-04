@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-animation"></div>
+  
+  <div class="container">
+    <div class="header">
+      <h1>Student Registration Portal</h1>
+    </div>
+
+    <div class="form-container">
+      <form id="studentForm" class="registration-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+          <span class="input-highlight"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+          <span class="input-highlight"></span>
+        </div>
+        
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" id="male" name="gender" value="Male" required />
+              <label for="male">Male</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="female" name="gender" value="Female" required />
+              <label for="female">Female</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="other" name="gender" value="Other" required />
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="branch">Academic Branch</label>
+          <select id="branch" name="branch" required>
+            <option value="">Select your branch</option>
+            <option value="CS">Computer Science</option>
+            <option value="IT">Information Technology</option>
+            <option value="EC">Electronics & Communication</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+          </select>
+          <span class="select-arrow">▼</span>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+          <span>Register Now</span>
+          <div class="btn-ripple"></div>
+        </button>
+      </form>
+    </div>
+
+    <div class="divider">
+      <span>Registered Students</span>
+    </div>
+
+    <div class="table-container">
+      <table class="students-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Branch</th>
+          </tr>
+        </thead>
+        <tbody id="studentsTableBody">
+          <tr>
+            <td><span class="id-badge">001</span></td>
+            <td>Tom Hanks</td>
+            <td>tom.hanks@email.com</td>
+            <td>Male</td>
+            <td><span class="branch-tag cs">CS</span></td>
+          </tr>
+          <tr>
+            <td><span class="id-badge">002</span></td>
+            <td>Scarlett O'Hara</td>
+            <td>scarlett.ohara@email.com</td>
+            <td>Female</td>
+            <td><span class="branch-tag it">IT</span></td>
+          </tr>
+          <tr>
+            <td><span class="id-badge">003</span></td>
+            <td>Bruce Wayne</td>
+            <td>bruce.wayne@email.com</td>
+            <td>Male</td>
+            <td><span class="branch-tag ec">EC</span></td>
+          </tr>
+          <tr>
+            <td><span class="id-badge">004</span></td>
+            <td>Hermione Granger</td>
+            <td>hermione.granger@email.com</td>
+            <td>Female</td>
+            <td><span class="branch-tag me">ME</span></td>
+          </tr>
+          <tr>
+            <td><span class="id-badge">005</span></td>
+            <td>Banana McPeel</td>
+            <td>banana.mcpeel@email.com</td>
+            <td>Other</td>
+            <td><span class="branch-tag ce">CE</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
