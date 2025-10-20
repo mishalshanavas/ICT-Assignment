@@ -1,0 +1,265 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  min-height: calc(100vh - 48px);
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #e9e9e7;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.dashboard-header p {
+  font-size: 14px;
+  color: #9b9a97;
+  margin: 0;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: #202020;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #2f2f2f;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+
+.stat-card:hover {
+  border-color: #404040;
+}
+
+.stat-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e9e9e7;
+  margin: 0 0 4px 0;
+}
+
+.stat-card p {
+  font-size: 12px;
+  color: #9b9a97;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.employee-card {
+  background: #202020;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #2f2f2f;
+  transition: border-color 0.15s ease;
+}
+
+.employee-card:hover {
+  border-color: #404040;
+}
+
+.employee-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.employee-avatar {
+  width: 32px;
+  height: 32px;
+  background: #2f2f2f;
+  color: #9b9a97;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.employee-info h3 {
+  margin: 0 0 2px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e9e9e7;
+  letter-spacing: -0.01em;
+}
+
+.employee-id {
+  margin: 0;
+  font-size: 12px;
+  color: #9b9a97;
+  font-weight: 500;
+}
+
+.employee-details {
+  margin-bottom: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 2px 0;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-weight: 500;
+  color: #9b9a97;
+  font-size: 12px;
+}
+
+.value {
+  font-weight: 500;
+  color: #e9e9e7;
+  font-size: 12px;
+  text-align: right;
+  max-width: 60%;
+  word-break: break-word;
+}
+
+.employee-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-primary, .btn-secondary {
+  flex: 1;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-primary {
+  background: #404040;
+  color: #e9e9e7;
+}
+
+.btn-primary:hover {
+  background: #525252;
+}
+
+.btn-secondary {
+  background: #2f2f2f;
+  color: #9b9a97;
+  border: 1px solid #404040;
+}
+
+.btn-secondary:hover {
+  background: #404040;
+  border-color: #525252;
+}
+
+.loading, .error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #2f2f2f;
+  border-top: 2px solid #404040;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading p {
+  color: #9b9a97;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.error h3 {
+  color: #ff6b6b;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.error p {
+  color: #9b9a97;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 16px 12px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 20px;
+  }
+
+  .dashboard-header p {
+    font-size: 13px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+  }
+
+  .employee-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .employee-card {
+    padding: 12px;
+  }
+
+  .employee-actions {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .stat-card {
+    padding: 12px;
+  }
+
+  .stat-card h3 {
+    font-size: 18px;
+  }
+}
