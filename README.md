@@ -1,6 +1,6 @@
 # ICT Assignments 🎓
 
-Hey! These are my college assignments where I'm learning web development. Built some shit stuff with MERN
+Hey! These are my college assignments where make some shit stuff with MERN
 
 ## What I Built
 
